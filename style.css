@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Rajdhani:wght@400;600&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-color: #000000; /* Jet Black */
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Increased width */
+    background: rgba(0, 0, 0, 0.9); /* Pure black */
+    padding: 25px;
+    border-radius: 12px;
+    margin: auto;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    animation: glowBox 1.5s infinite alternate;
+}
+
+/* Soft Glow Animation */
+@keyframes glowBox {
+    0% {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
+    }
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+    animation: textGlow 1.5s infinite alternate;
+}
+
+/* Glowing Text Effect */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+    }
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.9); /* Pure black */
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+}
+
+button {
+    padding: 12px 18px;
+    background: linear-gradient(145deg, #000000, #222222); /* Pure black tones */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #222222, #444444); /* Darker shades */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+}
+
+.summary-output {
+    background: rgba(0, 0, 0, 0.9); /* Pure black */
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-top: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    text-align: left;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.summary-output strong {
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+/* Cool Cursor Effect */
+button:hover, textarea:focus {
+    cursor: pointer;
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+.glow-text {
+    color: #ffffff;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+}

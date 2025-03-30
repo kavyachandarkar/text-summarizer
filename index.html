@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Text Summarization</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class='container'>
+        <h1>Text Summarization</h1>
+        <textarea id='inputText' placeholder='Enter text to summarize...'></textarea>
+        <select id='method'>
+            <option value='nltk'>NLTK</option>
+            <option value='spacy'>spaCy</option>
+            <option value='gensim'>gensim</option>
+        </select>
+        <button onclick='summarizeText()'>Summarize</button>
+        <h2>Summary:</h2>
+        <p id='summaryOutput'></p>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
